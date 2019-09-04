@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+        
+    <head>
+      
+     <link rel="stylesheet" type="text/css" href="style2.css">
+      </head>
+    <title>
+      CALCULATER
+    </title>
+    
+    <script src="calculate.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <body>
+   
+  <center>
+   <div class="fromstyle">
+    <form action="calculater" name="calculater">
+      <label class="label" >CASIO</label>
+        <input type="text" name="screen" placeholder="0">
+        <br><br>
+        
+        <input type="button" class="button" value="&radic;" onclick="calculater.screen.value=Math.sqrt(calculater.screen.value)">
+        <input type="button" class=button value="/" onclick="calculater.screen.value+='/'">
+        <input type="button" class="button2" value="&larr;" onclick="calculater.screen.value=calculater.screen.value.slice(0,-1)">
+        <input type="button" class="button1"  value="CE" onclick="calculater.screen.value=''"><br>
+
+        <input type="button" class="button" value="7" onclick="calculater.screen.value +='7'">
+        <input type="button" class="button" value="8" onclick="calculater.screen.value +='8'">
+        <input type="button" class="button" value="9" onclick="calculater.screen.value +='9'">
+        <input type="button" class="button"  value="+" onclick="calculater.screen.value +='+'"><br>
+
+        <input type="button" class="button"  value="4" onclick="calculater.screen.value+='4'">
+        <input type="button" class="button"  value="5" onclick="calculater.screen.value+='5'">
+        <input type="button" class="button"  value="6" onclick="calculater.screen.value+='6'">
+        <input type="button" class="button" value="-" onclick="calculater.screen.value+='-'"><br>
+
+        <input type="button" class="button" value="1" onclick="calculater.screen.value+='1'">
+        <input type="button"  class="button" value="2" onclick="calculater.screen.value+='2'">
+        <input type="button"class="button"  value="3" onclick="calculater.screen.value+='3'">
+        <input type="button" class="button" value="*" onclick="calculater.screen.value+='*'"><br>
+
+        <input type="button" class="button" value="0" onclick="calculater.screen.value+='0'">
+        <input type="button"class="button"  value="00" onclick="calculater.screen.value+='00'">
+        <input type="button"class="button"  value="." onclick="calculater.screen.value+='.'">
+        <input type="button" class="button" value="=" onclick="calculater.screen.value=eval(calculater.screen.value)">
+       <br>
+        
+        
+    </form>
+   </div>
+
+   
+  </center>
+  </body>
+</html>
